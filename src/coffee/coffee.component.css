@@ -1,0 +1,124 @@
+header{
+    background: #422912;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+}
+.container{
+    height: 100vh;
+}
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+main ul li{
+    list-style-type: none;
+    width: 44%;
+    height: 95px;
+    margin: 8px 5px;
+    padding: 5px;
+    background: #775333;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+}
+main ul li .TabHeader, main ul li .TabFooter{
+    border-bottom: 1px solid #C8B496;
+    padding: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main ul li .TabFooter p{
+    margin: 5px 0 10px 0;
+}
+main ul li .TabFooter p.serived{
+    color: #C8B496;
+    font-size: 11px;
+}
+main ul li .TabFooter p.preparing{
+    color: #FF8B10;
+    font-size: 11px;
+}
+main ul li .TabHeader .orderby{
+    background: #422912;
+    padding: 7px 10px;
+    border-radius: 50px;
+    font-size: 11px;
+}
+main ul li .TabHeader .tabno{
+    text-transform: uppercase;
+    font-size: 15px;
+    float: left;
+}
+main ul li .TabFooter{
+    border-bottom: none;
+}
+main ul li .TabFooter .status{
+    background: #F1FF2E;
+    padding:10px 20px;
+    font-size: 10px;
+    color:#918B85;
+    margin-right: -5px;
+}
+
+main ul li.TabAvailable{
+    background: #FFF;
+}
+main ul li.TabAvailable .TabHeader{
+    border-bottom: none;
+}
+main ul li.TabAvailable .TabFooter{
+    display: flex;
+    justify-content: center;
+}
+main ul li.TabAvailable .TabHeader span.tabno{
+    color: #422912;
+}
+main ul li.TabAvailable .TabHeader span.status{
+    color:#FF8B10;
+    font-size: 10px;
+    padding: 7px 10px;
+}
+main ul li.TabAvailable .TabFooter span.orderby{
+    background: #422912;
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+footer{
+    background: #fff;
+    height: 60px;
+    -webkit-box-shadow: 0px -10px 30px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px -10px 30px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px -10px 30px 0px rgba(0,0,0,0.16);
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin: 0;
+}
+footer ul li{
+    list-style-type: none;
+    width: 105px;
+    text-align: center;
+}
+footer ul li i{
+    color: #BEBEBE;
+    font-size: 30px;
+}
+footer ul li i.active{
+    color: #3F2711;
+    font-size: 30px;
+}
