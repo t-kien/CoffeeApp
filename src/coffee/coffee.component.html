@@ -4,54 +4,23 @@
 
 <main>
 <div class="container">
-    <ul>
-        <li class="TabOrdered">
-            <div class="TabHeader">
-                <span class="tabno">Tab.01</span>
-                <span class="orderby">Mr. Quỳnh</span>
-            </div>
-            <div class="TabFooter">
-                <div class="ordernum">3 orders</div>
-                <div class="status">Ready</div>
-            </div>
-        </li>
-        <li class="TabAvailable">
-            <div class="TabHeader">
-                <span class="tabno">Tab.02</span>
-                <span class="status">Available</span>
-            </div>
-            <div class="TabFooter">
-                <span class="orderby">Order</span>
-            </div>
-        </li>
-        <li class="TabOrdered">
-            <div class="TabHeader">
-                <span class="tabno">Tab.03</span>
-                <span class="orderby">Mr. Quỳnh</span>
-            </div>
-            <div class="TabFooter">
-                <div class="ordernum"><p>3 Orders</p> <p>1 new</p></div>
-                <div class=""><p class="serived">serviced</p> <p class="preparing">preparing</p></div>
-            </div>
-        </li>
-        <li class="TabOrdered">
-            <div class="TabHeader">
-                <span class="tabno">Tab.04</span>
-                <span class="orderby">Mr. Quỳnh</span>
-            </div>
-            <div class="TabFooter">
-                <div class="ordernum"><p>3 Orders</p></div>
-                <div class=""><p class="serived">serviced</p></div>
-            </div>
-        </li>
-    </ul>
+
+    <ul><app-table *ngFor="let table of tables" [table]='table'></app-table></ul>
+    <!-- tạo vòng lặp, lấy table trong CoffeeComponet
+    [table] là property trong TableComponent
+    -->
 </div>
 </main>
 
 <footer>
     <ul>
-        <li><i class="fas fa-coffee"></i></li>
-        <li><i class="fas fa-shopping-cart active"></i></li>
-        <li><i class="fas fa-user"></i></li>
+        <li *ngFor='let tab of tabs'><img [src]="tab.icon" [alt]="tab.name" (click)="onClickTab(tab)"></li>
+        <!-- 
+            vòng lặp *ngFor: cho giá trị tab trong tabs (file coffee.component.ts) thì lặp <li>
+            
+            [scr] -> property binding -> lấy giá trị icon trong mảng tabs (file coffee.component.ts)
+            [alt] tương tự lấy giá trị name
+            về phần sự kiện, để trong dấu ngoặc tròn (click) -> gọi hàm onClick trong (file coffee.component.ts)
+         -->
     </ul>
 </footer>

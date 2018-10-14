@@ -102,23 +102,20 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items:center;
+    text-align: center;
 }
 footer ul{
     display: flex;
     flex-wrap: wrap;
     align-items:center;
     margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer img{
+    width: 30px;
 }
 footer ul li{
     list-style-type: none;
-    width: 105px;
-    text-align: center;
-}
-footer ul li i{
-    color: #BEBEBE;
-    font-size: 30px;
-}
-footer ul li i.active{
-    color: #3F2711;
-    font-size: 30px;
+    flex-grow: 1;
 }

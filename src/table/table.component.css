@@ -1,0 +1,78 @@
+li{
+    list-style-type: none;
+    width: 85%;
+    height: 95px;
+    margin: 8px 19px;
+    padding: 5px;
+    background: #775333;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.16);
+}
+li .TabHeader, li .TabFooter{
+    border-bottom: 1px solid #C8B496;
+    padding: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li .TabFooter p{
+    margin: 5px 0 10px 0;
+}
+li .TabFooter p.serived{
+    color: #C8B496;
+    font-size: 11px;
+}
+li .TabFooter p.preparing{
+    color: #FF8B10;
+    font-size: 11px;
+}
+li .TabHeader .orderby{
+    background: #422912;
+    padding: 7px 10px;
+    border-radius: 50px;
+    font-size: 11px;
+}
+li .TabHeader .tabno{
+    text-transform: uppercase;
+    font-size: 15px;
+    float: left;
+}
+li .TabFooter{
+    border-bottom: none;
+}
+li .TabFooter .status{
+    background: #F1FF2E;
+    padding:10px 20px;
+    font-size: 10px;
+    color:#918B85;
+    margin-right: -5px;
+}
+
+li.TabAvailable{
+    background: #FFF;
+}
+li.TabAvailable .TabHeader{
+    border-bottom: none;
+}
+li.TabAvailable .TabFooter{
+    display: flex;
+    justify-content: center;
+}
+li.TabAvailable .TabHeader span.tabno{
+    color: #422912;
+}
+li.TabAvailable .TabHeader span.status{
+    color:#FF8B10;
+    font-size: 10px;
+    padding: 7px 10px;
+}
+li.TabAvailable .TabFooter span.orderby{
+    background: #422912;
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+}

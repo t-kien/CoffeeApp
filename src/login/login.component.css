@@ -1,0 +1,73 @@
+*{
+    background: #fff;
+}
+header{
+    margin-top: 20px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.container{
+    width: 100%;
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.login form{
+    width: 70%;
+}
+.info{
+    margin-bottom: 40px;
+}
+.info img{
+    width: 150px;
+}
+.info h2{
+    margin-bottom: 0;
+    font-weight: 200;
+}
+.info p{
+    color: #B8B6B6;
+}
+.login label{
+    float: left;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.login input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.usr{
+    background: url('../assets/user-solid.svg') no-repeat;
+    background-size: 15px;
+    background-position: right center;
+}
+.pasw{
+    background: url('../assets/key-solid.svg') no-repeat;
+    background-size: 15px;
+    background-position: right center;
+}
+
+.login button{
+    background: #422912;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+}
